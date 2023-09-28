@@ -1,4 +1,4 @@
-function MultiJoueur () {
+function MultiJoueur() {
     VieJoueur1 = 3
     VieJoueur2 = 3
     info.player1.setLife(VieJoueur1)
@@ -196,8 +196,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Started == 1) {
         animation.runImageAnimation(
-        mySprite,
-        [img`
+            mySprite,
+            [img`
             . . . . . . . f f f f f . . . . 
             . . . . . . f e e e e e f . . . 
             . . . . . f e e e d d d d f . . 
@@ -214,7 +214,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . f e f f b d f b d f . . . 
             . . . f d b b d d c d d f . . . 
             . . . f f f f f f f f f . . . . 
-            `,img`
+            `, img`
             . . . . . . . f f f f f . . . . 
             . . . . . . f e e e e e f . . . 
             . . . . . f e e e d d d d f . . 
@@ -231,7 +231,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             . . f e f f f f f f f f f f f f 
             . . f d d c f . . . . . . . . . 
             . . f f f f . . . . . . . . . . 
-            `,img`
+            `, img`
             . . . . . . . f f f f f . . . . 
             . . . . . . f e e e e e f . . . 
             . . . . f f e e e d d d d f . . 
@@ -248,7 +248,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             . f b f f f f f f c d d b d d f 
             . f d d c f . . f d d d c d d f 
             . . f f f . . . f f f f f f f . 
-            `,img`
+            `, img`
             . . . . . . . f f f f f . . . . 
             . . . . f f f e e e e e f . . . 
             . . . f d d e e e e d d d f . . 
@@ -265,7 +265,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . f f f c d d b d d f . . 
             . . . . . f f d d d c d d f . . 
             . . . . . . f f f f f f f . . . 
-            `,img`
+            `, img`
             . . . . . . . f f f f f . . . . 
             . . . . . . f e e e e e f . . . 
             . . . . . f e e e d d d d f . . 
@@ -283,8 +283,8 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             f f f f e b d d f d d f d d f . 
             . f f f f f f f f f f f f f . . 
             `],
-        100,
-        true
+            100,
+            true
         )
     }
 })
@@ -419,7 +419,7 @@ controller.left.onEvent(ControllerButtonEvent.Released, function () {
         animation.stopAnimation(animation.AnimationTypes.All, mySprite)
     }
 })
-function SinglePlayer () {
+function SinglePlayer() {
     sprites.destroy(Title)
     sprites.destroy(Single)
     sprites.destroy(MultiPlayer)
@@ -569,7 +569,7 @@ function SinglePlayer () {
     Started = 1
     controller.moveSprite(mySprite, 80, 0)
 }
-function Menu () {
+function Menu() {
     Started = 0
     tiles.setCurrentTilemap(tilemap`Niveau1`)
     Title = textsprite.create("Platformer", 9, 0)
@@ -705,8 +705,8 @@ function Menu () {
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Started == 1) {
         animation.runImageAnimation(
-        mySprite,
-        [img`
+            mySprite,
+            [img`
             . . . . f f f f f . . . . . . . 
             . . . f e e e e e f . . . . . . 
             . . f d d d d e e e f . . . . . 
@@ -723,7 +723,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . f d b f d b f f e f . . . 
             . . . f d d c d d b b d f . . . 
             . . . . f f f f f f f f f . . . 
-            `,img`
+            `, img`
             . . . . f f f f f . . . . . . . 
             . . . f e e e e e f . . . . . . 
             . . f d d d d e e e f . . . . . 
@@ -740,7 +740,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
             f f f f f f f f f f f f e f . . 
             . . . . . . . . . f c d d f . . 
             . . . . . . . . . . f f f f . . 
-            `,img`
+            `, img`
             . . . . f f f f f . . . . . . . 
             . . . f e e e e e f . . . . . . 
             . . f d d d d e e e f f . . . . 
@@ -757,7 +757,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
             f d d b d d c f f f f f f b f . 
             f d d c d d d f . . f c d d f . 
             . f f f f f f f . . . f f f . . 
-            `,img`
+            `, img`
             . . . . f f f f f . . . . . . . 
             . . . f e e e e e f f f . . . . 
             . . f d d d e e e e d d f . . . 
@@ -774,7 +774,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
             . . f d d b d d c f f f . . . . 
             . . f d d c d d d f f . . . . . 
             . . . f f f f f f f . . . . . . 
-            `,img`
+            `, img`
             . . . . f f f f f . . . . . . . 
             . . . f e e e e e f . . . . . . 
             . . f d d d d e e e f . . . . . 
@@ -792,8 +792,8 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
             . f d d f d d f d d b e f f f f 
             . . f f f f f f f f f f f f f . 
             `],
-        100,
-        true
+            100,
+            true
         )
     }
 })
@@ -821,3 +821,4 @@ forever(function () {
         }
     }
 })
+
